@@ -1,0 +1,79 @@
+name: CChat
+version: 1.0
+main: me.ItzTheDodo.CChat.CChat
+author: ItzTheDodo
+description:  A simple chat plugin
+api-version: 1.8
+prefix: CChat
+depend: [Vault]
+
+permissions:
+  cchat.commands.nick.use:
+   description: nick yourself
+  cchat.commands.nick.others:
+   description: nick others
+  cchat.commands.cchat.reload:
+   description: reloads all main configs after manual change
+  cchat.commands.cchat.clear.use:
+   descrpition: clears your own chat
+  cchat.commands.cchat.clear.all:
+   description: clears everyone's chat
+  cchat.commands.cchat.clear.others:
+   description: clears someone else's chat
+  cchat.commands.msg:
+   description: messages a player (also allows the reply command)
+  cchat.commands.ignore.use:
+   description: ignores player
+  cchat.commands.ignore.list.others:
+   description: lists the ignored players of others
+  cchat.commands.ignore.list.use:
+   description: lists the people ignoring you
+  cchat.commands.mute.use:
+   description: mute a player
+  cchat.commands.unmute.use:
+   description: unmute a player
+  cchat.commands.mute.all.use:
+   description: mute all
+  cchat.commands.unmute.all.use:
+   description: unmute all
+  cchat.commands.broadcast.use:
+   description: broadcast a message to the whole server
+  cchat.commands.privatechat.create:
+   description: create a private chat
+  cchat.commands.privatechat.remove:
+   description: remove a private chat
+  cchat.commands.privatechat.add:
+   description: invite any player to any private chat
+  cchat.commands.privatechat.kick:
+   description: kick any player from any private chat
+  cchat.admin.reports.receive:
+   description: receive report messages
+
+commands:
+  nick:
+   description: disguises a users real IGN
+  cchat:
+   description: main root command
+  message:
+   description: messages a player
+   aliases: msg
+  reply:
+   description: reply's to the player that just messaged you
+   aliases: r
+  ignore:
+   description: ignore a player, don't recieve messages from them
+  mute:
+   description: mute a player
+  unmute:
+   description: unmute a player
+  broadcast:
+   description: broadcast a message to the whole server
+   aliases: bc
+  privatechat:
+   description: use private chats
+   aliases: pc
+  switchchat:
+   description: switch between private chats and global chat
+   aliases: sc
+  report:
+   description: reports a player

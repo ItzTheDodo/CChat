@@ -1,0 +1,96 @@
+#   _____   _____   _                 _    #
+#  /  ___| /  ___| | |              _| |_  #
+# /  |    /  |     | |             |_   _| #
+# |  |    |  |     | |___   ____  _  | |   #
+# |  |    |  |     |  _  \ /  _  | | | |   #
+# \  |___ \  |___  | | | | | |_|   | | |_  #
+#  \_____| \_____| |_| |_| \_____\_| \___| #
+#                                          #
+#          Plugin By: ItzTheDodo           #
+#                                          #
+use-preset-Vault-chat-settings: false
+override-present-Vault-chat-settings: true
+nickname-prefix: "~"
+report-message: "&c>> <Player> has reported <Target> for a chat offence!"
+
+Chat-Delay:
+    enabled: true
+    time: 2
+
+Enable:
+    Restrictions: true
+    Rank-Display: true
+    Chat-History: true
+    anti-spam: true
+    world-specific-chats: true
+
+Join-leave-messages:
+    use: true
+    join: '&e<Player> joined at <World>'
+    leave: '&e<Player> left the game'
+    kick: '&e<Player> was kicked!'
+
+default-private-chats:
+    
+    StaffChat:
+        description: 'Main staff private chat'
+        prefix: ">"
+        nsfw: true
+        rank-amount: 3
+        rank-colours: "[&9,&c,&4]"
+           
+
+Connections:
+    Vault: true
+
+Fliter:
+    unicode: true
+    url: true
+    ip: true
+    caps: true
+
+Restrictions:
+    # Insert integer for count
+    Ban-After: 'null'
+    # Does bans refresh chat records (recommended)
+    Ban-Refresh: true
+    notify-player: true
+    player-message: '&4Please do not use this word/phrase!'
+    
+    replace-part-voilation-message-with: '*'
+    
+    Restricted-Words:
+        - 'example'
+    
+    Restricted-Phrases:
+        - 'This is an example'
+
+Rank-Display:
+    
+    use-op-colour: true
+    op-colour: '&4'
+    default: 'Default'
+    
+    # Use rank name
+    Default:
+        prefix: '[Default]'
+        name-colour: '&7'
+        chat-colour: '&f'
+        suffix: ''
+        
+        world:
+            show-world: false
+            world-colour: '&e'
+            prefix-suffix: 'prefix'
+     
+     
+    Builder:
+        prefix: '&7[&bBuilder&7]'
+        name-colour: '&b'
+        chat-colour: '&f'
+        suffix: ''
+        
+        world:
+            show-world: true
+            world-colour: '&e'
+            prefix-suffix: 'prefix'
